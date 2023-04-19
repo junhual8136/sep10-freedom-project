@@ -2,3 +2,13 @@
     height: 600px;
 }
 
+.text {
+    text-shadow: 1px 1px black;
+    color: red;
+
+}
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
