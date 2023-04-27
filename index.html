@@ -227,16 +227,36 @@
 
 
                                         <a-scene embedded>
+                                            <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
                                             <a-entity environment="preset: arches;
                                                                     groundColor: #445;
                                                                     grid: cross; "
 
                                             ></a-entity>
 
-                                            <a-box position="0 0.7 0" width="5" height="1" length="5" rotation="-90 90 0">
-                                                <a-box position="0 1 0" width="0.1" height="4"  rotation="90 90 45">
+                                            <a-box position="0 0.7 0" width="5" height="1" length="5" rotation="-90 90 0"
+                                                animation__move="
+                                                property: position;
+                                                from: 0 0.7 0;
+                                                to: 0 0.7 -10;
+                                                dur: 5000;
+                                                startEvents: click;"
+                                                animation__up="
+                                                property: position;
+                                                from: 0 0.7 -10;
+                                                to: 0 1.1 -10;
+                                                dur: 2000;
+                                                startEvents: animationcomplete__move;">
+                                                <a-cylinder position="1 0 0.7" radius="0.2" height="4"  rotation="90 90 0"
+                                                animation__rotate="
+                                                property: rotation;
+                                                from: 90 90 0;
+                                                easing: linear;
+                                                to: 90 90 90;
+                                                dur: 4000;
+                                                startEvents: animationcomplete__up;"
+                                                ></a-cylinder>
 
-                                                </a-box>
                                             </a-box>
                                         </a-scene>
 
