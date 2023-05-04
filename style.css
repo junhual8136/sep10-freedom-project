@@ -22,6 +22,8 @@
 .contextbody {
     margin-bottom: 15px;
     color: white;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .carousel-caption {
@@ -38,6 +40,9 @@
     margin-bottom: 15px;
 }
 
-#software {
-    text-allign:  
+.software {
+    text-align: center;
+    margin: auto;
+    text-shadow: 1px 1px black;
 }
+
