@@ -1,5 +1,5 @@
 .micromine {
-    height: 600px;
+    height: 400px;
 }
 
 .text {
@@ -11,4 +11,33 @@
     position: relative;
     left: auto;
     right: auto;
+}
+
+.context {
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.contextbody {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.carousel-caption {
+    display: block;
+}
+
+.softwarecard {
+    padding: 10px 10px 10px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.software-card-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#software {
+    text-allign:  
 }
