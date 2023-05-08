@@ -46,3 +46,20 @@
     text-shadow: 1px 1px black;
 }
 
+.hardware-card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.hardware-carousel {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#hardware {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px white
+}
+
+.innovation-card
