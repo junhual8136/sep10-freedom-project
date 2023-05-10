@@ -15,7 +15,7 @@
 
 .context {
     color: white;
-    margin-top: 12px;
+    margin-top: 4px;
     margin-bottom: 8px;
 }
 
@@ -59,7 +59,52 @@
 #hardware {
     text-align: center;
     color: white;
-    text-shadow: 1px 1px white
+    text-shadow: 0.3px 0.3px  white
 }
 
-.innovation-card
+.innovation-card {
+    margin: 15px 15px 15px 15px;
+}
+
+#innovations {
+    text-align: center;
+    color: white;
+    text-shadow: 0.3px 0.3px  white
+
+}
+
+.innovation-card-text {
+    padding-left: 25px;
+    padding-right: 25px;
+    /* padding-top: 30px; */
+    padding-bottom: 2em;
+    letter-spacing: 0.75px;
+
+}
+
+.innovation-card-title {
+    padding: auto;
+
+}
+
+.background {
+   padding: 0px 0px 0px 0px
+}
+
+.background-heading {
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    font-size: 35px;
+    text-shadow: 0.3px 0.3px white;
+    color: white;
+}
+
+@media (min-width: 922px) {
+    .background-heading {
+        font-size: 100 px;
+    }
+
+}
