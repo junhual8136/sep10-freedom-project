@@ -47,15 +47,16 @@
 
 
         <div class="">
-            <img src="img/background.jpeg" class="img-fluid" alt="...">
+            <img src="img/backgroundimg.webp" class="img-fluid backgroundimg" alt="...">
+
         </div>
 
 <!--Context-->
-        <div class="card text-center bg-dark" id="top">
+        <div class="card text-center bg-dark centered" id="top">
             <!-- <div class=""card-header">
                 The Mining Industry
             </div> -->
-            <div class="card-body">
+            <div class="card-body contextcard">
                 <h3 class="context" card="card-title">context</h3>
                 <p class="card-text contextbody"> Mining is something done for a really long period and time and new inventions had made the process easier.
                     There are different types of tools for mining such as softwares, hardwares for land, underground, or air use.
@@ -231,99 +232,100 @@
             </div>
 <!--Part b-->
             <div class="bg-body-tertiary bg-dark" data-bs-theme="dark" >
-        <h1 id="innovations">Innovations</h1>
-        <div class="container">
-            <div class="row">
+                <h1 id="innovations">Innovations</h1>
+                <div class="container">
+                    <div class="row">
 
-                <div class="col-sm-12 col-md-12 col-lg-6">
-                    <div class="card bg-light innovation-card">
-                        <div class="card-body">
-                            <h3 class="card-title innovation-card-title">Automated Blasthole drill</h3>
-                            <p class="card-text innovation-card-text">Combined with information from drones and other trackers, this vehicle can drive itself to a location and drill down without needing to be controlled directly.</p>
-
-
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aframe">
-                             Model
-                            </button>
-                                <div class="modal" id="aframe" tabindex="-1">
-                                <div class="modal-dialog modal-fullscreen">
-                                    <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Modal title</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="card bg-light innovation-card">
+                                <div class="card-body">
+                                    <h3 class="card-title innovation-card-title">Remote Blasthole drill</h3>
+                                    <p class="card-text innovation-card-text">Due to all the dust and smoke created when mining, it can be dangerous for workers operating the machines. A feature can be added to the vehicle allowing it to be controlled remotely with either a computer or in VR. It could also allow an AI to take over. Combined with information from drones and other trackers, this vehicle can drive itself to a location and drill down without needing to be controlled directly.</p>
 
 
-                                        <a-scene embedded>
-                                                <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
-                                                <a-entity environment="preset: arches;
-                                                                        groundColor: #445;
-                                                                        grid: cross; "
-
-                                                ></a-entity>
-
-                                            <a-box position="0 0.7 0" width="5" height="1" length="5" rotation="-90 90 0"
-                                                    animation__move="
-                                                    property: position;
-                                                    from: 0 0.7 0;
-                                                    to: 0 0.7 -10;
-                                                    dur: 5000;
-                                                    startEvents: click;"
-                                                    animation__up="
-                                                    property: position;
-                                                    from: 0 0.7 -10;
-                                                    to: 0 1.1 -10;
-                                                    dur: 2000;
-                                                    startEvents: animationcomplete__move;">
-                                                    <a-cylinder position="1 0 0.7" radius="0.2" height="4"  rotation="90 90 0"
-                                                    animation__rotate="property: rotation;
-                                                            to: 90 90 90
-                                                            dur: 3000;
-                                                            easing: linear;
-                                                            delay: 8000;"
-                                                    animation__cylinderup="property: position;
-                                                            from: 1 0 0.7;
-                                                            to: 1 0 2.5;
-                                                            dur: 1000;
-                                                            easing: linear;
-                                                            startEvents: animationcomplete__rotate;"
-                                                    ></a-cylinder>
-                                                <a-box position="1 0 0.7" width="0.1" height="3" length="0.15" depth="0.2" rotation="90 90 0"
-
-                                                        animation__drill="property: rotation;
-                                                            to: 90 90 90
-                                                            dur: 3000;
-                                                            easing: linear;
-                                                            delay: 8000;"
-                                                    animation__down="property: position;
-                                                            from: 1 0 0.1;
-                                                            to: 1 0 -1;
-                                                            dur: 10000;
-                                                            easing: linear;
-                                                            startEvents: animationcomplete__drill;">
-
-                                                </a-box>
-
-                                                </a-box>
-                                        </a-scene>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aframe">
+                                    Model
+                                    </button>
+                                        <div class="modal" id="aframe" tabindex="-1">
+                                        <div class="modal-dialog modal-fullscreen">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
 
 
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <a-scene embedded>
+                                                        <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+                                                        <a-entity environment="preset: arches;
+                                                                                groundColor: #445;
+                                                                                grid: cross; "
 
-                                    </div>
-                                    </div>
+                                                        ></a-entity>
+
+                                                    <a-box position="0 0.7 0" width="5" height="1" length="5" rotation="-90 90 0"
+                                                            animation__move="
+                                                            property: position;
+                                                            from: 0 0.7 0;
+                                                            to: 0 0.7 -10;
+                                                            dur: 5000;
+                                                            startEvents: click;"
+                                                            animation__up="
+                                                            property: position;
+                                                            from: 0 0.7 -10;
+                                                            to: 0 1.1 -10;
+                                                            dur: 2000;
+                                                            startEvents: animationcomplete__move;">
+                                                            <a-cylinder position="1 0 0.7" radius="0.2" height="4"  rotation="90 90 0"
+                                                            animation__rotate="property: rotation;
+                                                                    from: 90 90 0;
+                                                                    to: 90 90 90;
+                                                                    dur: 3000;
+                                                                    easing: linear;
+                                                                    delay: 8000;"
+                                                            animation__cylinderup="property: position;
+                                                                    from: 1 0 0.7;
+                                                                    to: 1 0 2.5;
+                                                                    dur: 1000;
+                                                                    easing: linear;
+                                                                    startEvents: animationcomplete__rotate;"
+                                                            ></a-cylinder>
+                                                        <a-box position="1 0 0.7" width="0.1" height="3" length="0.15" depth="0.2" rotation="90 90 0"
+
+                                                                animation__drill="property: rotation;
+                                                                    to: 90 90 90
+                                                                    dur: 3000;
+                                                                    easing: linear;
+                                                                    delay: 8000;"
+                                                            animation__down="property: position;
+                                                                    from: 1 0 0.1;
+                                                                    to: 1 0 -1;
+                                                                    dur: 10000;
+                                                                    easing: linear;
+                                                                    startEvents: animationcomplete__drill;">
+
+                                                        </a-box>
+
+                                                        </a-box>
+                                                </a-scene>
+
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+
+
+
+
                                 </div>
-                                </div>
-
-
-
-
-                        </div>
+                            </div>
                     </div>
-                </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="card bg-light innovation-card">
